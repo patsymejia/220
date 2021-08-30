@@ -51,6 +51,7 @@ def coffee():
     total_cost = (coffee_lbs * 10.50) + (coffee_lbs * 0.86) + 1.50
     print("The total cost is: $", total_cost)
 
+
 coffee()
 
 
