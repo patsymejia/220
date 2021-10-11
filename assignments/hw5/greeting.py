@@ -46,7 +46,7 @@ def main():
     circle_point2 = Point(385, 200)
     circle1 = Circle(circle_point, 100)
     circle2 = Circle(circle_point2, 100)
-    poly_point1 = Point(115, 220)
+    poly_point1 = Point(118, 228)
     poly_point2 = Point(485, 220)
     poly_point3 = Point(300, 550)
     triangle = Polygon(poly_point1, poly_point2, poly_point3)
