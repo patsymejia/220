@@ -15,6 +15,9 @@ from graphics import *
 def code(message, keyword):
     # 'message' and 'keyword' must be retrieved from entry box
     # remove spaces from message
+    message = message.strip()
+    message = message.upper()
+    keyword = keyword.upper()
     acc = ' '
     for i in range(len(message)):
         m = ord(message[i])
@@ -58,11 +61,9 @@ def main():
     button_outline.draw(win)
 
     # print 'resulting message \n <encoded message>'
-    message = str(msg_entry.getText())
-    message_value = message.strip()
-    key_value = str(msg2_entry.getText())
-
-    resulting_message = code(message_value, key_value)
+    message_value = msg_entry.getText()
+    key_value = msg2_entry.getText()
+    result = code(message_value, key_value)
 
     win.getMouse()
     button_txt.undraw()
@@ -71,7 +72,7 @@ def main():
     msg3 = "Resulting Message"
     msg3_display = Text(Point(width / 2, height / 2), msg3)
     msg3_display.draw(win)
-    result_display = Text(Point(width / 2, height / 2 + 25), print(resulting_message))
+    result_display = Text(Point(width / 2, height - 100), result)
     result_display.draw(win)
     close_win_txt = Text(Point(width / 2, height - 50), "Close Anywhere to Close Window")
     close_win_txt.draw(win)
