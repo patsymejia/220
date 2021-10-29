@@ -74,7 +74,6 @@ def send_safe_message(file, friend, key):
 def main():
     # number_words('test.txt', 'out.txt')
     hourly_wages('hourly_wages.txt', 'out2.txt')
-    pass
 
 
 main()
