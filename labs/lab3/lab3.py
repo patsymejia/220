@@ -40,7 +40,7 @@ newton()
 
 def sequence():
     terms = eval(input("how many terms in the series?"))
-    for i in range (1, terms + 1):
+    for i in range(1, terms + 1):
         x = 1 + i//2 * 2
         print(x)
 

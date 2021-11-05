@@ -15,6 +15,7 @@ def main():
     prev_balance = eval(input("Enter you previous (net) balance:"))
     pymt_made = eval(input("Enter the payment amount:"))
     pymt_day = eval(input("Enter the day of the billing cycle in which the payment is made:"))
+
     days_left = cycle_length - pymt_day
     balance_and_days = prev_balance * cycle_length
     pymtmade_and_daysleft = pymt_made * days_left
