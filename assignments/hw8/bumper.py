@@ -142,10 +142,9 @@ def main():
 
         time.sleep(.01)
 
-    win.getMouse()
-    win.close()
+        win.getMouse()
+        win.close()
 
 
 if __name__ == '__main__':
     main()
-
