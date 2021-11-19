@@ -1,0 +1,11 @@
+walrus
+tiger
+zebra
+giraffe
+otter
+penguin
+capybara
+orangutan
+bobcat
+toucan
+blowfish
