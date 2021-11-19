@@ -58,10 +58,8 @@ def main():
         default_message_display.undraw()
         winner.draw(win)
 
-
     else:
-        return False
-
+        pass
 
     win.getMouse()
     win.close()

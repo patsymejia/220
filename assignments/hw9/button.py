@@ -35,3 +35,4 @@ class Button:
 
     def set_label(self, label):
         self.text = label
+
