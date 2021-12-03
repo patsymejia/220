@@ -1,3 +1,11 @@
+"""
+Name: Patsy Mejia-Rocha
+sales_force.py
+this class allows user to retrieve and modify SalesForce data.
+Certification of Authenticity:
+I certify that this assignment is entirely my own work.
+
+"""
 class SalesForce:
 
     def __init__(self):
@@ -5,10 +13,9 @@ class SalesForce:
 
     def add_data(self, file_name):
         file = open(file_name, 'r')
-        data = file.readlines()
-        for line in data:
-            info = line.split(',')
-            self.sales_people = self.sales_people + [info]
+        for line in file:
+            self.sales_people = self.sales_people + [line]
+        file.close()
 
 
 
@@ -16,4 +23,4 @@ class SalesForce:
         report = []
         x = self.sales_people
         for i in range(len(x)):
-            pass
+

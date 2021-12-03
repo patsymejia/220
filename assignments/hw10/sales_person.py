@@ -1,3 +1,12 @@
+"""
+Name: Patsy Mejia-Rocha
+sales_person.py
+this class allows user to retrieve and modify salesperson data
+Certification of Authenticity:
+I certify that this assignment is entirely my own work.
+"""
+
+
 class SalesPerson:
     def __init__(self, employee_id, name):
         self.employee_id = employee_id
